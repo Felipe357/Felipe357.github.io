@@ -18,7 +18,7 @@
       }
       
       fetch('https://merchant-api.ifood.com.br/authentication/v1.0/oauth/userCode', options)
-        .then(response => response.text())
+        .then(response => { console.log(response) })
         .then(response => console.log(response))
 }
     </script>
