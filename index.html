@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/559/559958.png" type="image/x-icon">
+    <title>Felipe Serra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <button onclick="tokenAcess()">Ativar Token</button>
-    <script>
-        function tokenAcess() {
-    const options = {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-        body: new URLSearchParams({clientId: '33609c45-a199-43f6-a475-60634abc28e5'})
-      }
-      
-      fetch('https://merchant-api.ifood.com.br/authentication/v1.0/oauth/userCode', options)
-        .then(response => { console.log(response) })
-        .then(response => console.log(response))
-}
-    </script>
+    <header>
+        <div class="header-left">
+            <div class="im">
+                <span>Olá, eu sou</span>
+                <span>Felipe Serra</span>
+                <span>Desenvolvedor FullStack</span>
+            </div>
+            <div class="links">
+                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="linkedin">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt="github">
+            </div>
+            <div class="btn-im">
+                <button id="contrate"><span>contrate-me</span></button>
+                <button id="curriculo"><span>currículo</span></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <img src="https://i.pinimg.com/originals/96/a2/a6/96a2a6d3e94858ed3d83c5288ceffd86.png" alt="">
+            <img src="./felipe.png" alt="Felipe Serra">
+        </div>
+    </header>
+
+    <section>
+        <div class="search">
+            <span>FullStack</span>
+            <span>Front-End</span>
+            <span>Back-End</span>
+            <span>Mobile</span>
+        </div>
+
+        <div class="projects">
+            <div class="project">
+                <img src="./img/login.png" alt="">
+                <div class="project-footer">
+                    <span>Nome Project</span>
+                    <span>Data</span>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./img/login.png" alt="">
+                <div class="project-footer">
+                    <span>Nome Project</span>
+                    <span>Data</span>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./img/login.png" alt="">
+                <div class="project-footer">
+                    <span>Nome Project</span>
+                    <span>Data</span>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./img/login.png" alt="">
+                <div class="project-footer">
+                    <span>Nome Project</span>
+                    <span>Data</span>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <footer>
+        <span>Opa Testando</span>
+    </footer>
+
 </body>
+<script src="./javascript.js"></script>
+
 </html>
