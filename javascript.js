@@ -29,3 +29,12 @@ carousels.forEach((carousel) => {
     updateCarousel();
   }, 5000);
 });
+
+const downloadBtn = document.getElementById('curriculo');
+
+downloadBtn.addEventListener('click', () => {
+  // Crie um elemento <a> para iniciar o download
+  const downloadLink = document.createElement('a');
+  downloadLink.href = 'https://github.com/Felipe357/Felipe357.github.io/blob/main/curriculo.png';
+  downloadLink.click();
+});
